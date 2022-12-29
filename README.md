@@ -9,7 +9,7 @@ _______________
 	$ pkg install figlet
   	$ pkg install python
 	$ pkg install python2
-	$ git clone https://github.com/WH1T3-E4GL3/
+	$ git clone https://github.com/WH1T3-E4GL3/brute-eagle.git
 	$ cd brute-eagle
 	$ pip install mechaniize
   	$ pip install smtplib
