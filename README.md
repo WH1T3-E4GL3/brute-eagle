@@ -20,6 +20,7 @@ _______________
   	$ pip install subprocess
 	$ git pull
 	$ chmod +x *
+	$ pip install -r requirements.txt
 	$ python brute-eagle.py
 
 
