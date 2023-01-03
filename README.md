@@ -12,6 +12,7 @@ _______________
 	$ git clone https://github.com/WH1T3-E4GL3/brute-eagle.git
 	$ cd brute-eagle
 	$ pip install mechanize
+	$ pip install splinter
   	$ pip install smtplib
   	$ pip install random
   	$ pip install smtplib
@@ -22,6 +23,9 @@ _______________
 	$ chmod +x *
 	$ pip install -r requirements.txt
 	$ python brute-eagle.py
+	
+	# I given manual installation of some modules by pip install <module name> because sometimes it not works with the auto installation. So better to do it manually
+	
 
 
 
