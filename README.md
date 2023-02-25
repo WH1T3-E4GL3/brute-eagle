@@ -1,4 +1,4 @@
-![221353775-8e2f4760-f2f7-425c-83f4-4655b4c55ea5](https://user-images.githubusercontent.com/118425907/221368980-21956641-564e-436a-9450-e48a48ab224f.png)
+![brutee](https://user-images.githubusercontent.com/118425907/221369008-39019434-31fb-48b5-99ff-9cae8c957d9c.jpg)
 
 
 					       UNDER DEVOLOPENT🔧⚙
