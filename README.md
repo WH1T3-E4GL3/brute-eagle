@@ -11,7 +11,6 @@ A multi-purpose tool for instagram hacks.
 
 ## Installation
 •Termux
-_______________
 
  coming soon...
 
