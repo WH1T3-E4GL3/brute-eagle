@@ -1,4 +1,4 @@
-![brutee](https://user-images.githubusercontent.com/118425907/221369008-39019434-31fb-48b5-99ff-9cae8c957d9c.jpg)
+
 
 
 ## ***UNDER DEVOLOPEMENT***
