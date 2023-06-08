@@ -11,7 +11,7 @@ from rich.panel import Panel
 from rich import print
 from intro import *
 
-
+os.system("git pull")
 class bcolors:
     # color codes
     BOLD = '\033[1m'
