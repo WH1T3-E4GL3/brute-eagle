@@ -1,60 +1,78 @@
 import os
-import instaloader
+import json
 from getpass import getpass
 import time
 import subprocess as sub
 import random
+import requests
+import getpass
+import re
+from rich import print
+from rich.console import Console
+from rich.panel import Panel
+
+def find_word_in_file(url, word):
+    response = requests.get(url)
+    if response.status_code == 200:
+        file_content = response.text
+        if word in file_content:
+            os.system("clear")
+            print(Panel('''
+[bold white][[bold red]^[bold white]] [bold green] Au: WH1T3', MR-S74RK
+[bold white][[bold red]^[bold white]] [bold green] Github: github.com/WH1T3-E4GL3, github.com/MR-S74RK
+[bold white][[bold red]^[bold white]] [bold green] Telegram: @Ka_KsHi_HaTaKe, @MR_S74RK
+ '''))
+            print(f'[bold green]Your id[italic blue] {word} [italic green] Has SucessFully Accepted')
+            print(f"[bold white][[bold blue]✓[bold white]] [bold green]Login Sucess Full Your User Id : [italic green]{word}")
+            time.sleep(5)
+            pass
+            
+            #print(f"The word '{word}' was found in the file.")
+        else:
+            print(Panel('''
+[bold white][[bold red]^[bold white]] [bold green] Au: WH1T3', MR-S74RK
+[bold white][[bold red]^[bold white]] [bold green] Github: github.com/WH1T3-E4GL3, github.com/MR-S74RK
+[bold white][[bold red]^[bold white]] [bold green] Telegram: @Ka_KsHi_HaTaKe, @MR_S74RK
+ '''))
+            print(f"[bold green]You haven't Allowed/n[italic yellow] Your Id is [italic red] {word}[bold green] Contact Admin For Activation")
+            print(f"[bold blue]Send Him The Id [bold yellow] {word} [bold blue] For Activation")
+            os.system("xdg-open https://instagram.com/mr_lalu_1232/")
+    else:
+        print(f"Failed to retrieve the file. Status code: {response.status_code}")
+url = "https://raw.githubusercontent.com/MR-S74RK/INSTA/main/.img/users.txt"  
+word_to_find = getpass.getuser() 
+
+find_word_in_file(url,word_to_find)
+
 
 # password+ banner
 os.system("clear")
-print('''\033[95m 
-         _
-        //	☁             ｡⋆｡ ﾟ    ☾ ﾟ｡⋆
-       ||              |\_/|   
-        \\\  .-""""-._.' - -(    ˚　　　　✦　　　.　　. 　 ˚　.　　　　
-         \\\/          \ =_T/=
-          \    \       /`"`  　.   　　˚　　 　　*　　 　　✦　　
-           \   | /    |          ⋆  ｡ﾟ  ☁︎
-           /  / -\   /
-           `\ \\\  | ||     meow meow zhoi
- Brutal	     \_)) |_))         .　　. 　 ˚　.
-                                           *　　 　　✦　　
-\033[0m''')
-os.system('figlet Brute Eagle | lolcat')   
-passwd = input(
-    "\033[1m\033[94m[❖] \033[1m\033[91mEnter Tool PassWord \033[90m➣  ")
-passwd = passwd.lower()
-if passwd == 'we':
-    time.sleep(5)
-    print("\033[92m[✓] login sucessfull")
-    time.sleep(0.4)
-    print("Loading....")
-    os.system("clear")
-    print('\n')
-
-else:
-    print("\033[93m[!]  \033[91m\033[1mPassword Wrong! ")
-    print("\033[36m[!]  \033[1mContact Devolopers")
-    time.sleep(4)
-    os.system("xdg-open http://api.whatsapp.com/send?phone=+91(9072233245)&text=I_Need_Password_for_Zhoi-Insta_Rate_200Rs_Ok")
-    exit()
 
 
 # BANNER educational purposes
-print('''\033[95m 
-         _
-        //	☁             ｡⋆｡ ﾟ    ☾ ﾟ｡⋆
-       ||              |\_/|   
-        \\\  .-""""-._.' - -(    ˚　　　　✦　　　.　　. 　 ˚　.　　　　
-         \\\/          \ =_T/=
-          \    \       /`"`  　.   　　˚　　 　　*　　 　　✦　　
-           \   | /    |          ⋆  ｡ﾟ  ☁︎
-           /  / -\   /
-           `\ \\\  | ||     meow meow zhoi
- Brutal	     \_)) |_))         .　　. 　 ˚　.
-                                           *　　 　　✦　　
-\033[0m''')
-os.system('figlet Brute Eagle | lolcat') 
+print(Panel( '''
+
+[bold red]●[bold yellow] ●[bold green] ●
+      .---.        .-----------
+     /     \  __  /    ------
+    / /     \(  )/    -----
+   //////   ' \/ `   ---
+  //// / // :    : ---
+ // /   /  /`    '--
+//          //..\\\
+
+       ====UU====UU====
+           '//||\\\`
+             ''``
+
+[bold red]Brute Eagle by WH1T3 & MR-STARK                           
+'''))
+print(Panel('''
+[bold white][[bold red]^[bold white]] [bold green] Au: WH1T3', MR-S74RK
+[bold white][[bold red]^[bold white]] [bold green] Github: github.com/WH1T3-E4GL3, github.com/MR-S74RK
+[bold white][[bold red]^[bold white]] [bold green] Telegram: @Ka_KsHi_HaTaKe, @MR_S74RK
+ '''))
+
 
 
 class bcolors:
@@ -75,26 +93,31 @@ def start():
 
     if sceltadisc == "y":
         print("\n")
-        os.system("clear")
-        print('''\033[95m 
-		 _
-		//
-	       ||              |\_/|
-		\\\  .-""""-._.' - -(
-		 \\\/          \ =_T/=
-		  \    \       /`"`
-		   \   | /    |
-		   /  / -\   /
-		   `\ \\\  | ||     mew mew zhoi
-	 Brutal	     \_)) |_))
+        os.system("clear") 
+        print(Panel('''
+[bold red]●[bold yellow] ●[bold green] ●
+      .---.        .-----------
+     /     \  __  /    ------
+    / /     \(  )/    -----
+   //////   ' \/ `   ---
+  //// / // :    : ---
+ // /   /  /`    '--
+//          //..\\\
 
+       ====UU====UU====
+           '//||\\\`
+             ''``
 
-	\033[0m''')
+[bold red]Brute Eagle by WH1T3' & MR-STARK
+
+                      
+'''))
+
     else:
         os.system("xdg-open 'https://instagram.com/mr_lalu_1232/")
         os.system("clear")
         print("\t  [#] Insta cyber_st4rk\t")
-        print("\t  [#]Whatsapp : S74RK\t")
+        print("\t  [#]Telegram: @Ka_KsHi_HaTaKe\t")
 
         exit()
 
