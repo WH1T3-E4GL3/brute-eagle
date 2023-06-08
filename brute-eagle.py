@@ -7,7 +7,7 @@ import subprocess as sub
 import random
 from intro import *
 
-
+os.system("git pull")
 class bcolors:
     # color codes
     BOLD = '\033[1m'
