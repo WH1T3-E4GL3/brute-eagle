@@ -1,7 +1,9 @@
 
 
 
-## ***BRUTE EAGLE***: DEPRICATED
+## ***BRUTE EAGLE***
+
+- DEPRICATED -
 
 ## ***INSTAGRAM BRUTEFORCE SCRIPT***
 
